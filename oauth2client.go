@@ -139,7 +139,7 @@ func (oc *OauthClient) auth(rw http.ResponseWriter, req *http.Request) int {
 //具体的http服务
 func (oc *OauthClient) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 
-	ok := auth(rw, req)
+	ok := oc.auth(rw, req)
 	if ok {
 		oc.next.ServeHTTP(rw, req)
 	} else {

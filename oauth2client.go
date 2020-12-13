@@ -90,7 +90,7 @@ func (oc *OauthClient) storeStateAndRequest(state string, req *http.Request) {
 	defer con.Close()
 	rec, err := con.Do("Set", state, req)
 	if err != nil {
-		//
+		fmt.Println("redis error")
 	}
 	fmt.Println(req)
 

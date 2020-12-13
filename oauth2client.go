@@ -144,7 +144,7 @@ func (oc *OauthClient) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 		oc.next.ServeHTTP(rw, req)
 	} else {
 		state := randstr.RandomAlphanumeric(24)
-		ac.storeStateAndRequest(state, req)
+		oc.storeStateAndRequest(state, req)
 		escapeUrl := url.QueryEscape(oc.redirectURL)
 		loginURL := oc.authURL + "?response_type=" + oc.responseType + "&client_id=" + oc.clientID + "&scope=openid&state=" + oc.state + "&redirect_uri=" + escapeUrl
 		http.Redirect(rw, req, loginURL, http.StatusTemporaryRedirect)

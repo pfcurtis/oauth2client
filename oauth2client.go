@@ -140,7 +140,7 @@ func (oc *OauthClient) auth(rw http.ResponseWriter, req *http.Request) int {
 func (oc *OauthClient) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 
 	ok := oc.auth(rw, req)
-	if ok {
+	if ok == 1 {
 		oc.next.ServeHTTP(rw, req)
 	} else {
 		state := randstr.RandomAlphanumeric(24)

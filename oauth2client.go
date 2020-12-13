@@ -58,7 +58,7 @@ type OauthClient struct {
 	redirectURL string
 
 	authURL      string
-	responsetype string
+	responseType string
 	clientID     string
 	userinfor    string
 

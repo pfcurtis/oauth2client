@@ -112,7 +112,7 @@ func (oc *OauthClient) auth(rw http.ResponseWriter, req *http.Request) int {
 	if len(kv) != 2 || kv[0] != "Bearer" {
 		return 0
 	}
-	claims := get(oc.userinfoURL, authorization)
+	claims := get(oc.userinfor, authorization)
 	if claims == "error" {
 		return 0
 	}

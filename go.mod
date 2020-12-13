@@ -1,4 +1,4 @@
-module github.com/traefik/oauth2client
+module github.com/ytyuanxi/oauth2client
 
 go 1.15
 

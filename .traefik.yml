@@ -5,7 +5,7 @@ displayName: oauth2 client
 type: middleware
 
 # The import path of your plugin.
-import: github.com/traefik/oauth2client
+import: github.com/ytyuanxi/oauth2client
 
 # A brief description of what your plugin is doing.
 summary: ' redirect to /auth:  '

@@ -85,7 +85,7 @@ func New(ctx context.Context, next http.Handler, config *Config, name string) (h
 
 //存储state-request
 
-func (oc *OauthClient) storeStateAndRequest(state, req *http.Request) {
+func (oc *OauthClient) storeStateAndRequest(state string, req *http.Request) {
 	con := pool.Get()
 	defer con.Close()
 	rec, err := con.Do("Set", state, req)

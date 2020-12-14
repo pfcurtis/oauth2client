@@ -1,0 +1,19 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "Rq+0gLZWW4r4URYX1bR7WlGPmVk=",
+			"path": "github.com/gomodule/redigo/redis",
+			"revision": "c4a82d62aa08f0da1d0f6c0f47b3302d8a68db80",
+			"revisionTime": "2020-11-19T21:00:23Z"
+		},
+		{
+			"checksumSHA1": "JdfOMj8fZSHtuUsQn8m6/ZxfCCE=",
+			"path": "github.com/pochard/commons/randstr",
+			"revision": "4ed3c242c7bc48705ac37925783cfa854ba49beb",
+			"revisionTime": "2020-09-04T08:38:15Z"
+		}
+	],
+	"rootPath": "oauth2client"
+}

@@ -1,14 +1,14 @@
 # The name of your plugin as displayed in the Traefik Pilot web UI.
-displayName: oauth2 client
+displayName: OAuth2 Client Middleware
 
 # For now, `middleware` is the only type available.
 type: middleware
 
 # The import path of your plugin.
-import: github.com/ytyuanxi/oauth2client
+import: github.com/pfcurtis/oauth2client
 
 # A brief description of what your plugin is doing.
-summary: ' redirect to /auth:  '
+summary: 'If there is not a valid token, redirect to the authentication service URL'
 
 # Configuration data for your plugin.
 # This is mandatory,
